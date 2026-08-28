@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+   <pre> “Dream is not that which you see while sleeping it is something that does not let you sleep.” </pre>
+
+   <p> I like to drink a cup of tea.</p><p> I like to drink a cup of <del> tea. </del> </p>
+
+   <p> I like to drink a cup of tea.</p><p> I like to drink a cup of <del> tea. </del> <ins> coffee </ins> </p>
+
+   <p> The small tag defines smaller text.</p><p> The small tag defines <small> smaller </small> text.</p>
+
+<figure>
+  <img src="logo.png" alt="Şirkət loqosu" width="100px">
+  <figcaption>Şəkil 1 – Şirkət loqosu</figcaption>
+</figure>
+
+
+<a href=https://www.google.com/ target='_self'> Go to Google </a> <p> The _self value loads the linked document in the same frame as it was clicked (this is default).</p> <br>
+<a href=https://www.google.com/ target='_parent'> Go to Google </a> <p> The _parent value loads the linked document into the parent frame.</p> <br>
+<a href=https://www.google.com/ target='_blank'> Go to Google </a> <p> The _blank value loads the linked document into a new window or tab.</p> <br>        
+<a href=https://www.google.com/ target='_top'> Go to Google </a> <p> The _top value loads the linked document into the full body of the window.</p> <br>
+
+
+<address>Coding Seekho,<br>college road, nashik.</address>
+
+<p> The <abbr title=“VS Programming Institute”>VSPI</abbr> was found in 2017 </p>
+
+<details><summary>what is html </summary> <p> HTML </p>  </details>
+
+<table border="1" width="100%" height="200px" cellpadding="10" cellspacing="5">
+  <caption>Həftəlik Şöbə Qrafiki</caption>
+  <tr>
+    <th>Şöbə</th>
+    <th>İşçi</th>
+    <th colspan="10">Növbə Günləri (Colspan)</th>
+  </tr>
+  <tr>
+    <!-- Rowspan 2 sətiri şaquli birləşdirir -->
+    <td rowspan="2">IT Şöbəsi (Rowspan)</td>
+    <td>Əli</td>
+    <td>Bazar ertəsi</td>
+    <td>Çərşənbə</td>
+  </tr>
+  <tr>
+    <td>Vəli</td>
+    <td>Çərşənbə axşamı</td>
+    <td>Cümə</td>
+  </tr>
+  <tr>
+    <!-- Colspan 2 sütunu üfüqi birləşdirir -->
+    <td colspan="2">Ümumi İşçi Sayı: 2 (Colspan)</td>
+    <td colspan="2">Aktiv Növbə</td>
+  </tr>
+</table>
+
+<ul type='disc'> <li> HTML </li> </ul> 
+<ul type='square'> <li> HTML </li> </ul>
+<ul type='circle'> <li> HTML </li> </ul>
+<ul type='none'> <li> HTML </li> </ul>
+
+<br>
+
+<ol type='1'> <li> HTML </li> </ol> 
+<ol type='A'> <li> HTML </li> </ol>
+<ol type='a'> <li> HTML </li> </ol> 
+<ol type='I'> <li> HTML </li> </ol> 
+<ol type='i'> <li> HTML </li> </ol>
+
+<ul> 
+    <li>Samsung</li> 
+    <li>Iphone 
+        <ul> 
+        <li>Iphone 10</li> <li>Iphone 11</li> 
+        </ul> 
+    </li> 
+    <li>Oppo</li>
+</ul>
+
+<br>
+
+<ol> 
+    <li>LG TV</li> 
+    <li>Samsung 
+        <ol>
+             <li>Touch Screen</li>
+             <li>Regular Screen</li> 
+        </ol> 
+    </li> 
+    <li>BPL</li>
+</ol>
+
+<dl> 
+    <dt>HTML</dt>
+     <dd>- HyperText Markup Language</dd> 
+    <dt>CSS</dt> 
+     <dd>- Cascading Style Sheet</dd>
+</dl>
+
+<br>
+
+<iframe src="https://www.wikipedia.org" width="1500" height="400"></iframe>
+
+<br>
+<br>
+<br>
+<!-- The <b> MULTIMEDIA </b> Section -->
+ <hr>
+ <h1> MULTIMEDIA </h1>
+
+ <br>
+ <video width="640" height="360" controls autoplay muted loop>
+  <source src="lala.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+</video>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
+<br>
+
+<audio controls autoplay loop muted preload="auto">
+  <source src="brownnoise.mp3" type="audio/mpeg">
+</audio>
+
+<br>
+
+<!-- div və p tam eni tutduğu üçün yan-yana durmur, alt-alta düşür -->
+<div style="background-color: lightblue;">Bu birinci blokdur (div)</div>
+<p style="background-color: lightgreen;">Bu ikinci blokdur (p)</p>
+
+<br>
+
+<div style="background-color:black;color:white;padding:20px;"> 
+    <h2>Div Tag</h2> 
+    <p>The <h2>div</h2> element is often used as a container for other HTML tags.</p>
+</div>
+
+<br>
+<br>
+
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+<br>
+
+<header>
+  <h1>Mənim Saytım</h1>
+</header>
+
+<nav>
+  <a href="#">Ana səhifə</a> | <a href="#">Haqqımızda</a>
+</nav>
+
+<div class="layout-container">
+  <main>
+    <h2>Əsas Məzmun</h2>
+    <p>Burada əsas məzmun yerləşəcək.</p>
+  </main>
+<section>
+  <h2>Əsas Bölmə</h2>
+  <article>
+    <h3>Xəbər Başlığı</h3>
+    <p>Burada xəbərin mətni olacaq.</p>
+  </article>
+</section>
+
+<aside>
+  <p>Yan panel / Reklamlar</p>
+</aside>
+</div>
+
+<footer>
+  <p>&copy; 2026 Bütün hüquqlar qorunur.</p>
+</footer>
+
+<br>
+<br>
+
+<marquee behavior="alternate" direction="right" width="80%" height="50px">
+  akuif saga sola gedib gelecek
+</marquee>
+
+<marquee scrollamount="15" scrolldelay="50" loop="5" hspace="20">
+  Bu mətn daha sürətlə keçəcək və 5 dəfədən sonra dayanacaq
+</marquee>
+
+<br>
+<br>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <button type="submit">Submit</button>
+</form>
+<br>
+<br>
+<form> 
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Password:</label><br> 
+    <input type="password" id="pwd" name="pwd">
+</form>
+
+<br>
+<br>
+
+<form> 
+    <label for="fname">First name:</label><br> 
+    <input type="text" id="fname" name="fname"><br> 
+    <label for="lname">Last name:</label><br> 
+    <input type="text" id="lname" name="lname"><br><br> 
+    <input type="reset">
+</form>
+
+<br>
+<br>
+
+<form> 
+    <input type="radio" id="html" name="fav_language" value="HTML"> 
+        <label for="html">HTML</label><br> 
+    <input type="radio" id="css" name="fav_language" value="css">
+        <label for="css">CSS</label><br> 
+</form>
+
+<br>
+<br>
+
+<form>
+  <!-- Birinci checkbox -->
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">I have a bike</label><br>
+
+  <!-- İkinci checkbox -->
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">I have a car</label><br>
+</form>
+<br>
+<br>
+
+<form> 
+    <label for="favcolor">Select your favorite color:</label> 
+    <input type="color" id="favcolor" name="favcolor">
+</form>
+
+<br>
+<br>
+
+<form>
+  <label>Doğum tarixi:</label><br>
+
+  <!-- Gün -->
+  <select name="day" id="day">
+    <option value="">Gün</option>
+    <option value="26" selected>26</option>
+  </select>
+
+  <!-- Ay -->
+  <select name="month" id="month">
+    <option value="">Ay</option>
+    <option value="07" selected>İyul</option>
+  </select>
+
+  <!-- İl -->
+  <select name="year" id="year">
+    <option value="">İl</option>
+    <option value="2008" selected>2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+  </select>
+</form>
+
+<br>
+<br>
+
+<form> 
+    <label for="datemax">Enter a date before 1980-01-01:</label> 
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br> 
+    <label for="datemin">Enter a date after 2000-01-01:</label> 
+    <input type="date" id="datemin" name="datemin" min="2000-01-02">
+</form>
+
+<br>
+<br>
+
+<form> 
+    <label for="birthdaytime">Birthday (date and time):</label> 
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+
+<br>
+<br>
+
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+<br>
+<br>
+
+<form> 
+    <label for="email">Enter your email:</label> 
+    <input type="email" id="email" name="email">
+</form>
+
+<br>
+<br>
+
+<form> 
+    <label for="email">Enter your email:</label> 
+    <input type="email" id="email" name="email">
+    <input type="image" src="logo.png" alt="Submit" width="48" height="48">
+</form>
+
+<br>
+<br>
+
+<form> 
+    <label for="myfile">Select a file:</label> 
+    <input type="file" id="myfile" name="myfile">
+</form>
+
+<br>
+<br>
+
+<form> 
+    <label for="bdaymonth">Birthday (month and year):</label> 
+    <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+
+<br>
+<br>
+
+<form>
+  <label for="quantity">Say (1-dən 10-a kimi, 2-2):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10" step="2" value="1">
+</form>
+
+<br>
+<br>
+
+<form>
+  <label for="vol">Volume (0 və 50 arası):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+
+<br>
+<br>
+
+<form action="https://www.google.com/search" method="get" target="_blank"> 
+    <label for="gsearch">Search Google:</label>
+    <input type="search" id="gsearch" name="q">
+    <input type="submit" value="Search">
+</form>
+
+<br>
+<br>
+
+<form>
+  <label for="phone">Telefon nömrəniz (050-123-45-67):</label>
+
+  <input type="tel" id="phone" name="phone"
+         pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+         placeholder="050-123-45-67"
+         required>
+  <input type="submit" value="Göndər">
+</form>
+
+<br>
+<br>
+
+<form> 
+    <label for="appt">Select a time:</label> 
+    <input type="time" id="appt" name="appt">
+</form>
+
+<br>
+<br>
+
+<form> 
+    <label for="week">Select a week:</label> 
+    <input type="week" id="week" name="week">
+</form>
+
+<br>
+<br>
+
+<!-- Input AAttributes-->
+
+<form action="https://www.google.com/search" method="get" target="_blank">
+
+  <!-- 1. AUTOFOCUS & REQUIRED & PLACEHOLDER & SIZE & MAXLENGTH -->
+  <!-- Səhifə açılan kimi kursor burada olur (autofocus). Boş saxlanıla bilməz (required). -->
+  <!-- Silik ipucu yazısı var (placeholder). Ekran genişliyi 25 simvoldur (size). Maksimum 15 simvol yazıla bilər (maxlength). -->
+  <label for="username">İstifadəçi adı:</label><br>
+  <input type="text" 
+         id="username" 
+         name="username" 
+         placeholder="İstifadəçi adınız" 
+         size="25" 
+         maxlength="15" 
+         autofocus 
+         required><br><br>
+
+  <!-- 2. VALUE & READONLY -->
+  <!-- İlkin dəyəri verilib (value). İstifadəçi dəyişdirə bilmir, amma forma göndəriləndə serverə gedir (readonly). -->
+  <label for="role">Status:</label><br>
+  <input type="text" 
+         id="role" 
+         name="role" 
+         value="Tələbə" 
+         readonly><br><br>
+
+  <!-- 3. VALUE & DISABLED -->
+  <!-- Passiv olunub (disabled). İstifadəçi toxuna bilmir və forma göndəriləndə serverə gedmir. -->
+  <label for="system_id">Sistem ID:</label><br>
+  <input type="text" 
+         id="system_id" 
+         name="system_id" 
+         value="SYS-994" 
+         disabled><br><br>
+
+  <!-- 4. MIN & MAX -->
+  <!-- Daxil edilə biləcək minimum və maksimum rəqəm həddini təyin edir. -->
+  <label for="age">Yaşınız (18 - 65):</label><br>
+  <input type="number" 
+         id="age" 
+         name="age" 
+         min="18" 
+         max="65"><br><br>
+
+  <!-- 5. MULTIPLE -->
+  <!-- Eyni anda bir neçə e-poçt (vergüllə ayıramqla) daxil etməyə imkan verir. -->
+  <label for="emails">Əlaqə e-poçtları:</label><br>
+  <input type="email" 
+         id="emails" 
+         name="emails" 
+         placeholder="a@gmail.com, b@gmail.com" 
+         multiple><br><br>
+
+  <!-- 6. MULTIPLE (Fayl üçün) -->
+  <!-- Klaviaturada Ctrl düyməsini sıxaraq eyni anda bir neçə fayl seçməyə imkan verir. -->
+  <label for="docs">Sənədləri yükləyin:</label><br>
+  <input type="file" 
+         id="docs" 
+         name="docs" 
+         multiple><br><br>
+
+  <!-- Formanı göndərmək üçün düymə -->
+  <input type="submit" value="Formanı Göndər">
+
+</form>
+
+<br>
+<br>
+
+<!-- <select> Tag  -->
+
+<select id="cars" name="cars" required>
+  <!-- Boş və seçilə bilməyən köməkçi yazı -->
+  <option value="" selected disabled hidden>Maşın seçin...</option>
+  
+  <option value="volvo">Volvo</option>
+  <option value="audi">Audi</option>
+  <option value="bmw">BMW</option>
+</select>
+
+<br>
+<br>
+
+<form>
+  <label for="car4">Maşın seçin (Eyni anda 3-ü görünür):</label><br>
+  <!-- Menyu kliklənmədən ekranda 3 sətir hündürlüyündə açıq qalır -->
+  <select id="car4" name="car_choice4" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</form>
+
+<br>
+<br>
+
+<form>
+  <label for="car5">Bir neçə maşın seçin (Ctrl basıb saxlayın):</label><br>
+  <!-- multiple atributu eyni anda birdən çox opsiyanı seçməyə imkan verir -->
+  <select id="car5" name="car_choice5" multiple size="4">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</form>
+
+<br>
+<br>
+
+<form action="/submit-message" method="post">
+  <label for="user-message">Mesajınız:</label><br>
+
+  <!-- 10 sətir hündürlüyündə və 30 simvol enində textarea -->
+    <textarea id="user-message" name="message" rows="10" cols="30" placeholder="Mesajınızı bura daxil edin...">
+The cat was playing in the garden.
+</textarea>
+</form>
+
+<br>
+<br>
+
+<form action="/submit-person" method="post">
+  <!-- Qruplaşdırma çərçivəsi -->
+  <fieldset style="width: 300px; margin: left; border: 2px solid #ccc; padding: 20px;">
+    <!-- Çərçivənin üstündəki başlıq -->
+    <legend style="text-align: center;">Personal Details:</legend>
+
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<br>
+<br>
+
+<form action="/submit-course" method="post">
+  <label for="course-input">Kurs seçin və ya yazın:</label><br>
+
+  <!-- input-un list atributu ilə datalist-in id-si EYNİ olmalıdır -->
+  <input type="text" id="course-input" list="Courses" name="user_course" placeholder="Məs: Python, JAVA...">
+
+  <!-- Hazır təkliflər siyahısı -->
+  <datalist id="Courses">
+    <option value="C Programming">
+    <option value="CPP">
+    <option value="JAVA">
+    <option value="Python">
+    <option value="JavaScript">
+  </datalist>
+
+  <br><br>
+  <input type="submit" value="Göndər">
+</form>
+<br>
+<br>
+
+<select name="cars">
+  <optgroup label="Alman Maşınları">
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+  </optgroup>
+  <optgroup label="Yapon Maşınları">
+    <option value="toyota">Toyota</option>
+    <option value="honda">Honda</option>
+  </optgroup>
+</select>
+
+<br>
+<br>
+
+<details>
+  <summary>Daha ətraflı oxumaq üçün klikləyin</summary>
+  <p>Bu mətn yalnız başlıq kliklənəndə ekranda görünür.</p>
+</details>
+
+
+</body>
+</html>

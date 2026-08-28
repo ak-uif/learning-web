@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tam HTML5 Master Dərs Nümunəsi</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f8f9fa; padding: 20px; line-height: 1.6;">
+
+  <!-- SAYT BAŞLIĞI VƏ NAVİQASİYA -->
+  <header style="background-color: #333; color: white; padding: 15px; text-align: center; border-radius: 6px;">
+    <h1>Mənim Veb Portalım</h1>
+    <nav>
+      <a href="#haqqinda" style="color: #4CAF50; margin: 0 10px; text-decoration: none;">Haqqımızda</a> |
+      <a href="#cedvel" style="color: #4CAF50; margin: 0 10px; text-decoration: none;">Cədvəl</a> |
+      <a href="#forma" style="color: #4CAF50; margin: 0 10px; text-decoration: none;">Qeydiyyat</a>
+    </nav>
+  </header>
+
+  <br>
+
+  <!-- CANLI ELAN XƏTTİ -->
+  <marquee behavior="scroll" direction="left" scrollamount="6" style="background-color: #ffeb3b; padding: 5px; font-weight: bold;">
+    📢 Xoş gəlmisiniz! Yeni HTML5 kurslarımıza qeydiyyat davam edir!
+  </marquee>
+
+  <!-- ƏSAS MƏZMUN BÖLMƏSİ -->
+  <main>
+    <section id="haqqinda">
+      <h2>Mətn Formatlama Və Media</h2>
+      <p>Bu paraqrafda <b>qalın</b>, <i>kursiv</i>, <mark>vurğulanmış</mark>, <del>silinmiş</del> və <ins>yeni əlavə edilmiş</ins> sözlər var.</p>
+      
+      <details>
+        <summary><b>Formulaları Görmək Üçün Klikləyin</b></summary>
+        <p>Su: H<sub>2</sub>O | Kvadrat tənlik: X<sup>2</sup> + Y<sup>2</sup> = Z<sup>2</sup></p>
+      </details>
+    </section>
+
+    <hr>
+
+    <!-- CƏDVƏL BÖLMƏSİ -->
+    <section id="cedvel">
+      <h2>Məlumat Cədvəli</h2>
+      <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; max-width: 500px; background-color: white; text-align: center;">
+        <caption style="font-weight: bold; margin-bottom: 5px;">Tələbə Qiymətləri</caption>
+        <tr style="background-color: #e0e0e0;">
+          <th>Ad</th>
+          <th>Kurs</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Əli</td>
+          <td>Frontend</td>
+          <td rowspan="2" style="background-color: #d4edda; color: green;">Məzun</td>
+        </tr>
+        <tr>
+          <td>Aysel</td>
+          <td>Backend</td>
+        </tr>
+        <tr>
+          <td colspan="3">Ümumi tələbə sayı: 2 nəfər</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- MASTER FORM BÖLMƏSİ -->
+    <section id="forma">
+      <h2>Tam Qeydiyyat Forması</h2>
+      <form action="/qeydiyyat-serveri" method="post" style="max-width: 550px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+
+        <!-- 1. ŞƏXSİ MƏLUMATLAR -->
+        <fieldset style="border: 2px solid #2196F3; border-radius: 6px; padding: 15px; margin-bottom: 15px;">
+          <legend style="color: #2196F3; font-weight: bold; padding: 0 8px;">Şəxsi Məlumatlar</legend>
+
+          <label for="username">İstifadəçi adı:</label><br>
+          <input type="text" id="username" name="username" placeholder="Məs: ali99" required autofocus style="width: 100%; padding: 6px; box-sizing: border-box;"><br><br>
+
+          <label for="userpass">Şifrə:</label><br>
+          <input type="password" id="userpass" name="password" placeholder="••••••••" required style="width: 100%; padding: 6px; box-sizing: border-box;"><br><br>
+
+          <label for="userphone">Telefon (xxx-xxx-xxxx):</label><br>
+          <input type="tel" id="userphone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="050-123-4567" style="width: 100%; padding: 6px; box-sizing: border-box;">
+        </fieldset>
+
+        <!-- 2. SEÇİMLƏR VƏ TƏQVİM -->
+        <fieldset style="border: 2px solid #4CAF50; border-radius: 6px; padding: 15px; margin-bottom: 15px;">
+          <legend style="color: #4CAF50; font-weight: bold; padding: 0 8px;">Tədris və Tarix Seçimi</legend>
+
+          <!-- Datalist ilə avtotamamlama -->
+          <label for="kurs-secim">Kurs seçin və ya yazın:</label><br>
+          <input type="text" id="kurs-secim" list="kurs-siyahisi" name="kurs" placeholder="Kurs axtar..." style="width: 100%; padding: 6px; box-sizing: border-box;">
+          <datalist id="kurs-siyahisi">
+            <option value="HTML5 və CSS3">
+            <option value="JavaScript Mütəxəssisi">
+            <option value="Python Backend">
+          </datalist>
+          <br><br>
+
+          <!-- Qruplaşdırılmış Select -->
+          <label for="paket">Tədris Paketi:</label><br>
+          <select id="paket" name="paket" style="width: 100%; padding: 6px;">
+            <option value="" selected disabled hidden>Paket seçin...</option>
+            <optgroup label="Əyani Dərslər">
+              <option value="eyani_ferdi">Fərdi Dərs</option>
+              <option value="eyani_qrup">Qrup Dərsi</option>
+            </optgroup>
+            <optgroup label="Onlayn Dərslər">
+              <option value="online_canli">Canlı Zoom</option>
+              <option value="online_video">Video Dərslik</option>
+            </optgroup>
+          </select>
+          <br><br>
+
+          <label for="dogum">Başlama Tarixi:</label><br>
+          <input type="date" id="dogum" name="start_date" min="2026-01-01" max="2026-12-31" style="width: 100%; padding: 6px; box-sizing: border-box;">
+        </fieldset>
+
+        <!-- 3. RƏY VƏ FAYL YÜKLƏMƏ -->
+        <fieldset style="border: 2px solid #FF9800; border-radius: 6px; padding: 15px; margin-bottom: 15px;">
+          <legend style="color: #FF9800; font-weight: bold; padding: 0 8px;">Əlavə Qeyd və Sənəd</legend>
+
+          <label for="cv">CV Yükləyin (Çoxlu seçim mümkündür):</label><br>
+          <input type="file" id="cv" name="user_files" multiple><br><br>
+
+          <label for="qeyd">Əlavə Qeydiniz:</label><br>
+          <textarea id="qeyd" name="qeyd" rows="3" placeholder="Fikirlərinizi bura yazın..." style="width: 100%; padding: 6px; box-sizing: border-box;"></textarea>
+        </fieldset>
+
+        <!-- DÜYMƏLƏR -->
+        <div style="display: flex; gap: 10px;">
+          <input type="submit" value="Qeydiyyatdan Keç" style="flex: 2; background-color: #4CAF50; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; font-size: 16px;">
+          <input type="reset" value="Təmizlə" style="flex: 1; background-color: #f44336; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; font-size: 16px;">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <br>
+
+  <!-- SAYTIN ALTLIĞI (FOOTER) -->
+  <footer style="background-color: #333; color: white; text-align: center; padding: 12px; border-radius: 6px; font-size: 14px;">
+    <p>&copy; 2026 Bütün Müəllif Hüquqları Qorunur.</p>
+  </footer>
+
+</body>
+</html>

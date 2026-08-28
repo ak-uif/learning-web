@@ -1,0 +1,85 @@
+.box-model {
+  /* 1. CONTENT (Məzmun sahəsi) */
+  width: 200px;
+  height: 80px;
+  background-color: #81d4fa; /* Mavi fon */
+
+  /* 2. PADDING (Daxili boşluq) */
+  padding: 20px;
+
+  /* 3. BORDER (Çərçivə) */
+  border: 5px solid #2e7d32; /* Qalın yaşıl çərçivə */
+  border-radius: 15px; /* Dairəvi künclər */
+
+  /* 4. MARGIN (Xarici boşluq) */
+  margin: 80px;
+}
+
+/* Bütün elementlər üçün box-sizing sığortası */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.basliq {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* 🌟 ::AFTER İLƏ ƏLAVƏ OLUNAN SÜNİ XƏTT */
+.basliq::after {
+  content: "";          /* 1. MÜTLƏQ YAZILMALIDIR (Süni elementi yaradır) */
+  display: block;      /* Xəttin yeni sətirdən düşməsi üçün */
+  width: 200px;         /* Xəttin eni */
+  height: 20px;         /* Xəttin qalınlığı */
+  background-color: red; /* Xəttin rəngi */
+  margin-top: 8px;     /* Mətnlə xətt arasındakı məsafə */
+  border-radius: 5px;  /* Xəttin kənarlarının yumşaldılması */
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Inline: En veririk amma təsir etmir */
+.test-inline {
+  display: inline;
+  width: 300px; /* Brauzer bunu saymayacaq */
+  background-color: yellow;
+}
+
+/* Block: Yeni sətirdən düşür və tam 100% tutur */
+.test-block {
+  display: block;
+  background-color: lightgreen;
+  margin-top: 10px;
+}
+
+/* Inline-block: Yan-yana qalır, amma 150px enini götürür */
+.test-ib {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  background-color: lightblue;
+  margin: 15px 20px;
+}
+
+/* None: Gizlədir */
+.test-none {
+  display: none;
+}
+
+.kart {
+   /* 1. XƏBƏRDARLIQ: Absolute övlad bu qutudan kənara çıxmasın! */
+  width: 200px;
+  height: 150px;
+  background-color: #eee;
+  padding: 10px;
+}
+
+.birc-nişan {
+  position: absolute; /* 2. Sərbəst hərəkət edir */
+  top: 0;
+  right: 0;          /* Kartın tam yuxarı sağ küncünə yapışır */
+  background-color: red;
+  color: white;
+}
