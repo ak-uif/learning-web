@@ -69,7 +69,7 @@
 }
 
 .kart {
-   /* 1. XƏBƏRDARLIQ: Absolute övlad bu qutudan kənara çıxmasın! */
+  position: relative; /* 1. XƏBƏRDARLIQ: Absolute övlad bu qutudan kənara çıxmasın! */
   width: 200px;
   height: 150px;
   background-color: #eee;
